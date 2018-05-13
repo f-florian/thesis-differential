@@ -15,7 +15,7 @@ public:
     enum class Type
     {
         Gauss,                                                                                                          //!< Gauss nodes
-        ClenshawCurtis                                                                                                  //!< Chebyshev nodes. Warning: in reverse order 
+        ClenshawCurtis                                                                                                  //!< Chebyshev nodes
     };
     Differential(size_t npoints, Type type);                                                                            //!< initialize data for a given order
     ~Differential();                                                                                                    //!< initialize data for a given order
