@@ -9,6 +9,6 @@ add_compile_options(-pipe -Werror -Wall -W -Wconversion -Wshadow -Wpointer-arith
 set(progname ${PROJECT_NAME})
 
 add_library(${progname} SHARED ${sources})
-install(TARGETS ${progname} LIBRARY DESTINATION "lib" PERMISSIONS WORLD_READ)
-install(FILES "differential.h" DESTINATION "include" PERMISSIONS WORLD_READ)
-install(FILES "LICENSE" DESTINATION "var/lib/${progname}" PERMISSIONS WORLD_READ)
+install(TARGETS ${progname} LIBRARY DESTINATION "$ENV{PREFIX}/lib" PERMISSIONS WORLD_READ)
+install(FILES "differential.h" DESTINATION "$ENV{PREFIX}/include" PERMISSIONS WORLD_READ)
+install(FILES "LICENSE" DESTINATION "$ENV{PREFIX}/var/lib/${progname}" PERMISSIONS WORLD_READ)
